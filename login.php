@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conexion = new mysqli("localhost", "root", "", "jordandb");
+$conexion = new mysqli("mysql://root:RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk@mysql.railway.internal:3306/railway", "root", "RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk", "railway");
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
