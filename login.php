@@ -1,7 +1,12 @@
 <?php
 session_start();
+$host = "yamabiko.proxy.rlwy.net";      // ← Copiar desde Railway
+$port = 45769;                              // ← El puerto que aparece en Railway
+$dbname = "railway";         // ← El nombre de la base
+$user = "root";                        // ← Tu usuario Railway
+$pass = "RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk";                     // ← Tu contraseña Railway
 
-$conexion = new mysqli("mysql://root:RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk@mysql.railway.internal:3306/railway", "root", "RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk", "railway");
+$conexion = new mysqli($host, $user, $pass, $dbname, $port);
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
