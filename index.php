@@ -10,8 +10,9 @@ $usuario = $_SESSION['usuario'] ?? null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JordanMP</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
+     <link rel="icon" href="img/logoA.png" type="image/x-icon">
 </head>
 <body>
   <?php if ($usuario): ?>
@@ -27,7 +28,7 @@ $usuario = $_SESSION['usuario'] ?? null;
     <h1 class="title">Sobre Nosotros</h1>
 
     <div class="header">
-      <img src="logoA.png" alt="Logo JordanMP" class="logo" />
+      <img src="img/logoA.png" alt="Logo JordanMP" class="logo" />
       <div class="store-name">JordanMP</div>
     </div>
 
@@ -39,7 +40,7 @@ $usuario = $_SESSION['usuario'] ?? null;
     <div class="content">
       <!-- Imagen de la tienda -->
       <div class="image-wrapper">
-        <img src="fshop.png" alt="Foto de la tienda física" />
+        <img src="img/fshop.png" alt="Foto de la tienda física" />
       </div>
 
       <!-- Mapa -->
@@ -71,7 +72,7 @@ $usuario = $_SESSION['usuario'] ?? null;
   </div>
 </body>
 <footer>
-  <p><strong>JordanMP</strong> - Av. Panamericana 535, esquina Edison, Martínez, Provincia de Buenos Aires</p>
+  <p><strong>JordanMP</strong> - Av. Panamericana 535/585, esquina Edison, Martínez, Provincia de Buenos Aires</p>
   <p>Email: contacto@jordanmp.com | WhatsApp: +54 9 11 1234-5678</p>
   <p>&copy; 2025 JordanMP. Todos los derechos reservados.</p>
 </footer>

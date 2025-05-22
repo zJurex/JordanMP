@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $host = "yamabiko.proxy.rlwy.net";      // ← Copiar desde Railway
 $port = 45769;                              // ← El puerto que aparece en Railway
 $dbname = "railway";         // ← El nombre de la base
