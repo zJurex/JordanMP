@@ -376,6 +376,14 @@ $usuario = $_SESSION['usuario'] ?? null;
   </div>
 </body>
 <footer>
+  <?php if ($usuario): ?>
+  	<div style="position: absolute; top: 10px; right: 20px; color: white; background-color: #333; padding: 8px 16px; border-radius: 8px; display: flex; align-items: center; gap: 10px;">
+      	Bienvenido, <strong><?php echo htmlspecialchars($usuario); ?></strong>
+      	<form method="post" action="logout.php" style="margin: 0;">
+        	  <button type="submit" style="background-color: #37b1e2; color: black; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer;">Cerrar sesión</button>
+        </form>
+  	</div>
+  <?php endif; ?>
   <p><strong>JordanMP</strong> - Av. Panamericana 535, esquina Edison, Martínez, Provincia de Buenos Aires</p>
   <p>Email: contacto@jordanmp.com | WhatsApp: +54 9 11 1234-5678</p>
   <p>&copy; 2025 JordanMP. Todos los derechos reservados.</p>
