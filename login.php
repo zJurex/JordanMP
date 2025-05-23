@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-$host = "yamabiko.proxy.rlwy.net";      // ← Copiar desde Railway
-$port = 45769;                              // ← El puerto que aparece en Railway
-$dbname = "railway";         // ← El nombre de la base
-$user = "root";                        // ← Tu usuario Railway
-$pass = "RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk";                     // ← Tu contraseña Railway
+$host = "yamabiko.proxy.rlwy.net";     
+$port = 45769;                            
+$dbname = "railway";       
+$user = "root";                        
+$pass = "RHQYiUcOfzwwKkWPGyzyAGKITKXPnMXk";       
 
 $conexion = new mysqli($host, $user, $pass, $dbname, $port);
 if ($conexion->connect_error) {
@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
 
         $stmt->bind_param("ss", $usuario, $hash);
         if ($stmt->execute()) {
-            echo "<script>alert('Usuario registrado exitosamente.'); window.location.href = 'index.php';</script>";
+            echo "<script>alert('Usuario registrado exitosamente.'); window.location.href = 'index.html';</script>";
         } else {
             echo "<script>alert('Error al registrar usuario.'); window.history.back();</script>";
         }
