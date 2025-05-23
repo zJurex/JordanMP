@@ -15,14 +15,7 @@ $usuario = $_SESSION['usuario'] ?? null;
     <link rel="icon" href="img/logoA.png" type="image/x-icon">
   </head>
   <body id="top"class="p-3 m-0">
-  <?php if ($usuario): ?>
-  	<div style="position: absolute; top: 10px; right: 20px; color: white; background-color: #333; padding: 8px 16px; border-radius: 8px; display: flex; align-items: center; gap: 10px;">
-      	Bienvenido, <strong><?php echo htmlspecialchars($usuario); ?></strong>
-      	<form method="post" action="logout.php" style="margin: 0;">
-        	  <button type="submit" style="background-color: #37b1e2; color: black; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer;">Cerrar sesión</button>
-        </form>
-  	</div>
-  <?php endif; ?>
+  
     <nav class="navbar navbar-expand-lg fixed-top" id="barraNavegacion">
       <div class="container-fluid position-relative d-flex justify-content-between align-items-center">
         <button
