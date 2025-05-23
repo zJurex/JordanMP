@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
         $stmt->fetch();
         if (password_verify($password, $hash)) {
             $_SESSION['usuario'] = $usuario;
-            echo "<script>window.location.href = 'main.php';</script>";
+            echo "<script>window.location.href = 'https://gasparibautista.github.io/JordanMP/';</script>";
         } else {
             echo "<script>alert('Contraseña incorrecta.'); window.history.back();</script>";
         }
