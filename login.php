@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
 
         $stmt->bind_param("ss", $usuario, $hash);
         if ($stmt->execute()) {
-            echo "<script>alert('Usuario registrado exitosamente.'); window.location.href = 'index.html';</script>";
+            echo "<script>alert('Usuario registrado exitosamente.'); window.location.href = 'index.php';</script>";
         } else {
             echo "<script>alert('Error al registrar usuario.'); window.history.back();</script>";
         }
